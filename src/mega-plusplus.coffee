@@ -191,6 +191,7 @@ module.exports = (robot) ->
     msg.send message.join("\n")
 
   robot.respond /delete all scores/i, (msg) ->
+    user = msg.envelope.user
     isAdmin = @robot.auth?.hasRole(user, 'plusplus-admin') or @robot.auth?.hasRole(user, 'admin')
 
     if not @robot.auth? or isAdmin

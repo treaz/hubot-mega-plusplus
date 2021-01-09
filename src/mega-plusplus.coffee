@@ -195,7 +195,7 @@ module.exports = (robot) ->
     isAdmin = @robot.auth?.hasRole(user, 'plusplus-admin') or @robot.auth?.hasRole(user, 'admin')
 
     if not @robot.auth? or isAdmin
-      erased = scoreKeeper.eraseAll()
+      erased = scoreKeeper.eraseAllScores()
     else
       return msg.reply "Sorry, you don't have authorization to do that."
 

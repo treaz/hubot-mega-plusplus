@@ -86,8 +86,8 @@ class ScoreKeeper
     false
 
   eraseAllScores: () ->
-    delete @storage.scores = []
-    delete @storage.reasons = []
+    delete @storage.scores = {}
+    delete @storage.reasons = {}
     return true
 
   scoreForUser: (user) ->

@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "clark": "0.0.6",
-    "coffeescript": "~2.5.1",
+    "coffeescript": "~1.6",
     "underscore": ">= 1.0"
   },
   "devDependencies": {
